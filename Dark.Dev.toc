@@ -3,6 +3,7 @@
 ## Author: Darkend / DarkStorm / Zenedar / EU
 ## Version: 0.0.1
 ## Notes: Developer utilities
+## RequiredDeps: Dark.Core
 
 config.lua
 initialise.lua
