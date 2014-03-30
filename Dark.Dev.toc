@@ -9,5 +9,6 @@ config.lua
 initialise.lua
 
 features\frameSlashHandler.lua
+features\reloaduiSlashHandler.lua
 
 run.lua
