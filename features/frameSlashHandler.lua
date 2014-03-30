@@ -1,7 +1,5 @@
 local addon, ns = ...
 
-local slash = ns.lib.slash
-
 local frameDebugSlashHandler = function()
 
 	local onSlash = function(frameName)
