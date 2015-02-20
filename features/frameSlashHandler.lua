@@ -22,9 +22,13 @@ local frameDebugSlashHandler = function()
 		print("|cffCC0000~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 		print("Name: |cffFFD100"..frame:GetName())
 
-		if frame:GetParent() then
-			print("Parent: |cffFFD100"..frame:GetParent():GetName())
+		local parent = frame:GetParent()
+
+		if parent ~= nil then
+			parent = parent:GetName() or tostring(parent)
 		end
+
+		print("Parent: |cffFFD100".. (parent or "nil"))
 
 		print("Width: |cffFFD100"..format("%.2f",frame:GetWidth()))
 		print("Height: |cffFFD100"..format("%.2f",frame:GetHeight()))
@@ -40,7 +44,7 @@ local frameDebugSlashHandler = function()
 		end
 
 		if relativeTo then
-			print("Point: |cffFFD100"..point.."|r anchored to "..relativeTo:GetName().."'s |cffFFD100"..relativePoint)
+			print("Point: |cffFFD100"..point.."|r anchored to ".. (relativeTo:GetName() or tostring(relativeTo)) .."'s |cffFFD100"..relativePoint)
 		end
 
 		print("|cffCC0000~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
