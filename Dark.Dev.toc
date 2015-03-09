@@ -9,5 +9,6 @@ initialise.lua
 
 features\frameSlashHandler.lua
 features\reloaduiSlashHandler.lua
+features\fixBlizzard.lua
 
 run.lua
