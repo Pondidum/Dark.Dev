@@ -2,8 +2,9 @@ local addon, ns = ...
 
 local reloadSlashHandler = function()
 
-	SLASH_RELOADUI1 = "/rl"
-	SlashCmdList.RELOADUI = ReloadUI
+	local rl = ns.lib.slash:new("rl", {
+		_default = ReloadUI
+	})
 
 end
 
