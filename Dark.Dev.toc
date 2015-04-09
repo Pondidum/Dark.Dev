@@ -1,4 +1,4 @@
-## Interface: 50400
+## Interface: 60000
 ## Title: Dark.Dev
 ## Author: Darkend / DarkStorm / Zenedar / EU
 ## Version: 0.0.1
